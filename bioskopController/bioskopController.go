@@ -8,6 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// inisialisasi struct bioskop
 type Bioskop struct {
 	BioskopID int64   `json:"bioskop_id"`
 	Nama      string  `json:"nama"`

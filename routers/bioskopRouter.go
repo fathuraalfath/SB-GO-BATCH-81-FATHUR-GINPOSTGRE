@@ -19,10 +19,10 @@ func StartServer() *gin.Engine {
 		})
 	})
 
-	router.POST("/bioskop", bioskopcontroller.CreateBioskop)
-	router.GET("/bioskop", bioskopcontroller.GetBioskop)
-	router.GET("/bioskop/:id", bioskopcontroller.GetBioskop)
-	router.PUT("/bioskop/:id", bioskopcontroller.UpdateBioskop)
-	router.DELETE("/bioskop/:id", bioskopcontroller.DeleteBioskop)
+	router.POST("/bioskop", bioskopcontroller.CreateBioskop)       // menambah data bioskop
+	router.GET("/bioskop", bioskopcontroller.GetBioskop)           // menampilkan data bioskop
+	router.GET("/bioskop/:id", bioskopcontroller.GetBioskop)       // menampilkan data bioskop berdasarkan id
+	router.PUT("/bioskop/:id", bioskopcontroller.UpdateBioskop)    // update data bioskop berdasarkan id
+	router.DELETE("/bioskop/:id", bioskopcontroller.DeleteBioskop) // delete data bioskop berdasarkan id
 	return router
 }

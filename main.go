@@ -18,6 +18,7 @@ const (
 	dbname   = "bioskop"
 )
 
+// inisialisasi database
 var (
 	db  *sql.DB
 	err error
